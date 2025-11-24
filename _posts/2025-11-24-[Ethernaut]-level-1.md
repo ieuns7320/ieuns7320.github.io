@@ -101,28 +101,27 @@ contract Fallback {
 - 0.001 ether 미만만 입금 가능하도록 제한
 - 해당 주소의 누적 입금액(contributions)에 더함
 - 만약 명시적 소유자(owner)보다 더 많이 입금된 주소가 있으면 owner를 그 주소로 변경
+
 > 즉, 새로운 “최대 기여자”가 자동으로 오너가 됨
 
-</br>
 
 **`getContribution()`**
 - 호출자(msg.sender)의 자기 입금 총액을 반환
 
-</br>
 
 **`withdraw()`**
 - 오직 owner만 호출 가능 (onlyOwner modifier 적용)
 - 컨트랙트의 모든 잔고를 owner 계정으로 전송
 
-</br>
 
 **`receive()`**
 - msg.value > 0 (즉, 0보다 큰 이더 입금 필수)
 - 기존에 `contributionsmsg.sender > 0` 이어야 함 (즉, 최소 한번 입금한 적이 있어야 함)
     - 그럴 경우 owner를 그 주소(msg.sender)로 변경
+
 > 즉, 아주 소량이라도 입금한 유저가 임의의 이더 전송으로 owner가 될 수 있음
 
-</br>
+
 
 ## `0x03` Solve
 
@@ -132,7 +131,7 @@ contract Fallback {
 1. 0.001 ether 미만으로 한 번이라도 `contribute()` 실행한 뒤, `receive()`로 직접 이더 전송하면 owner 탈취. (소유권 획득)
 2. owner 권한이 생기면 `withdraw()`로 잔고를 전부 빼낼 수 있음. (잔고를 0으로 만듦)
 
-</br>
+
 
 위의 시나리오를 코드로 작성해보면 아래와 같습니다.
 
@@ -195,8 +194,6 @@ async function main() {
 
 main().catch(console.error);
 
-
-
 ```
 
-해당 코드를 실행시킨 후 
+해당 코드를 실행시킨 후 "Solve 🎉" 로그가 찍힌 후 제출하면 Fallback 문제가 풀리게 됩니다.
