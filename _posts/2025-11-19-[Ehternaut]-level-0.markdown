@@ -1,7 +1,7 @@
 ---
 title: Hello Ethernaut
 author: ieuns
-date: 2025-11-19 00:34:00 +0800
+date: 2025-11-19 00:34:00 +0900
 categories: [Web3, Solidity]
 tags: [Ethernaut]
 ---
