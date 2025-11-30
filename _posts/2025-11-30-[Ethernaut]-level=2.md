@@ -27,7 +27,8 @@ Solidity Remix IDE
 
 ## `0x02` Code Audit
 ---
-```Solidity
+
+```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.0;
 
@@ -98,7 +99,7 @@ Solidity 0.4.x 이하에서는 컨트랙트 이름과 같은 함수가 생성자
 ---
 > 이번 풀이부터는 Solidity로 작성됩니다.
 
-```Solidity
+```
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.0;
 
