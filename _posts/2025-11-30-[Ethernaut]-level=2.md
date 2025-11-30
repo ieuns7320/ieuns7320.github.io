@@ -1,7 +1,7 @@
 ---
 title: Ethernaut > Fal1out
 author: ieuns
-date: 2025-11-19 00:34:00 +0900
+date: 2025-11-30 13:25:00 +0900
 categories: [Web3, Solidity]
 tags: [Ethernaut]
 ---
