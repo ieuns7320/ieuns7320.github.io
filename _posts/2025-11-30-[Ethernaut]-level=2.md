@@ -1,5 +1,5 @@
 ---
-title: Ethernaut > Hello Ethernaut
+title: Ethernaut > Fal1out
 author: ieuns
 date: 2025-11-19 00:34:00 +0900
 categories: [Web3, Solidity]
