@@ -1,5 +1,5 @@
 ---
-title: Ethernaut > Fal1out
+title: Ethernaut > Coin Flip
 author: ieuns
 date: 2026-01-12 00:00:00 +0900
 categories: [Web3, Solidity]
