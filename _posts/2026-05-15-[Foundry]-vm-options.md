@@ -1,5 +1,5 @@
 ---
-title: Foundry > Hello Ethernaut
+title: Foundry > VM. Cheatcode
 author: ieuns
 date: 2026-05-15 10:51:00 +0900
 categories: [Web3, Solidity, Foundry]
